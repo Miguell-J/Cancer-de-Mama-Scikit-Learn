@@ -52,8 +52,9 @@ Carregar o Conjunto de Dados de Câncer de Mama:
 python
 Copy code
 dados = load_breast_cancer()
-Este trecho de código carrega o conjunto de dados de câncer de mama usando a função load_breast_cancer do scikit-learn.
 ```
+
+Este trecho de código carrega o conjunto de dados de câncer de mama usando a função load_breast_cancer do scikit-learn.
 
 ### Dividir os Dados
 

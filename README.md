@@ -1,5 +1,7 @@
 # Classificação de Câncer de Mama usando Naive Bayes
 
+<img src="https://www.nexofin.com/archivos/2020/08/doctor-with-a-pink-ribbon_1508929535-1536x722.jpg"/>
+
 ## Visão Geral
 
 Este repositório contém um script em Python para construir e avaliar um modelo de classificação para o diagnóstico de câncer de mama usando o algoritmo Gaussian Naive Bayes. O código utiliza a biblioteca scikit-learn para carregar o conjunto de dados de câncer de mama, dividi-lo em conjuntos de treinamento e teste, treinar um modelo Gaussian Naive Bayes, fazer previsões e calcular a precisão do modelo.

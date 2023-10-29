@@ -13,9 +13,7 @@ Antes de executar o script, certifique-se de ter as seguintes bibliotecas Python
 - pandas: Uma biblioteca de manipulação e análise de dados.
 - Você pode instalar essas bibliotecas usando pip:
 
-```
-bash
-Copy code
+```bash
 pip install scikit-learn pandas
 ```
 
@@ -24,9 +22,7 @@ Clone o repositório ou baixe o script para a sua máquina local.
 
 ### Execute o script:
 
-```
-bash
-Copy code
+```bash
 python classificacao_cancer_mama.py
 ```
 
@@ -35,9 +31,7 @@ O script pode ser dividido nas seguintes seções:
 
 ### Importar Bibliotecas
 
-```
-python
-Copy code
+```python
 import sklearn
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -48,9 +42,7 @@ Esta seção importa as bibliotecas Python necessárias para a manipulação de 
 
 Carregar o Conjunto de Dados de Câncer de Mama:
 
-```
-python
-Copy code
+```python
 dados = load_breast_cancer()
 ```
 
@@ -58,9 +50,7 @@ Este trecho de código carrega o conjunto de dados de câncer de mama usando a f
 
 ### Dividir os Dados
 
-```
-python
-Copy code
+```python
 y = dados['target']
 x = dados['data']
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)
@@ -70,9 +60,7 @@ Ele divide o conjunto de dados em recursos (x) e rótulos alvo (y) e, em seguida
 
 Criar e Treinar o Modelo Naive Bayes:
 
-```
-python
-Copy code
+```python
 from sklearn.naive_bayes import GaussianNB
 gnb = GaussianNB()
 modelo = gnb.fit(x_train, y_train)
@@ -82,9 +70,7 @@ Nesta seção, importamos o classificador Gaussian Naive Bayes do scikit-learn, 
 
 ### Fazer Previsões
 
-```
-python
-Copy code
+```python
 previsoes = modelo.predict(x_test)
 ```
 
@@ -92,9 +78,7 @@ Ele utiliza o modelo treinado para fazer previsões nos dados de teste.
 
 ### Calcular a Precisão
 
-```
-python
-Copy code
+```python
 from sklearn.metrics import accuracy_score
 print("A precisão do modelo é: {:.2%}".format(accuracy_score(y_test, previsoes)))
 ```

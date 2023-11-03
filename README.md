@@ -80,7 +80,8 @@ Ele utiliza o modelo treinado para fazer previsões nos dados de teste.
 
 ```python
 from sklearn.metrics import accuracy_score
-print("A precisão do modelo é: {:.2%}".format(accuracy_score(y_test, previsoes)))
+print("A precisão do modelo é de: {:.2%}".format(accuracy_score(y_test, previsoes)))
+>>> A precisão do modelo é de: 94.15%
 ```
 
 Por fim, importamos a função accuracy_score do scikit-learn e calculamos a precisão das previsões do modelo nos dados de teste. O resultado é impresso no console como uma porcentagem.
